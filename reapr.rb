@@ -2,8 +2,8 @@ class Reapr < Formula
   homepage "https://www.sanger.ac.uk/resources/software/reapr/"
   # doi "10.1186/gb-2013-14-5-r47"
   # tag "bioinformatics"
-  url "ftp://ftp.sanger.ac.uk/pub/resources/software/reapr/Reapr_1.0.17.tar.gz"
-  sha1 "4d2a8856a6d19d259aeec8591a024ba598003acc"
+  url "ftp://ftp.sanger.ac.uk/pub/resources/software/reapr/Reapr_1.0.18.tar.gz"
+  sha1 "1d7d48998a424dbd7ff6ad250322d4fbe158d0a9"
 
   bottle do
     sha1 "f31e1933d3472e02798db71c0a556e8700fadacb" => :yosemite
@@ -40,7 +40,7 @@ class Reapr < Formula
         bam2perfect fa2gaps fa2gc make_plots n50 scaff2contig
         task_break task_fcdrate task_gapresize task_score task_stats
         task_facheck.pl task_perfectfrombam.pl task_perfectmap.pl
-        task_plots.pl task_preprocess.pl task_smaltmap.pl
+        task_pipeline.pl task_plots.pl task_preprocess.pl task_smaltmap.pl
         task_summary.pl reapr.pl
       ]
     end
